@@ -1,0 +1,128 @@
+---
+import ambos3img from "../../public/img/ambosTres.webp";
+import deNuevoTuimg from "../../public/img/y_de_nuevo_tu.webp";
+
+const ambosTresDescription = `Luz está a punto de decir «sí, quiero». Un sí que jamás
+                        habría imaginado pronunciar. Ella, que nunca se ataba a
+                        nadie ni a nada. Ella, que siempre prefería jugar antes
+                        que quedarse. Mientras camina hacia el altar, no puede
+                        evitar preguntarse en qué momento cambió todo. Cinco
+                        años antes de la boda, tras un duro año preparando la
+                        selectividad, Luz decide mudarse a Barcelona para
+                        estudiar Periodismo. Allí conocerá a Raúl, Enric, Enda y
+                        Júlia: un grupo de amigos tan peculiar como inesperado.
+                        Con ellos formará vínculos intensos, complicados y
+                        profundamente especiales que la empujarán hacia una
+                        encrucijada que jamás habría imaginado. Por primera vez
+                        se enamorará de verdad. Tendrá que tomar una decisión
+                        que lo cambiará todo y aprender a escuchar a su propio
+                        corazón, sin prejuicios ni mentiras. Porque el amor, a
+                        veces, llega de la forma más inesperada… y en el momento
+                        más inoportuno.`;
+
+const deNuevoTuDescription = `Andrea lleva una vida aparentemente perfecta: un matrimonio estable, 
+                             una hija que ilumina sus días y una peluquería que ha levantado a base de tesón, 
+                             sacrificio y orgullo. A sus ojos, el pasado quedó ordenado en cajones que nunca pensó volver a abrir… 
+                             hasta que el reencuentro inesperado con Marga —una mujer ligada a un pasado que nunca terminó de cerrarse— 
+                             abre una grieta que la obliga a enfrentarse a todo lo que creyó dejar atrás. 
+                             Ahora, el destino las coloca frente a frente, obligándolas a convivir con todo lo que han callado: 
+                             la rabia, la nostalgia, la culpa, la atracción y esa pregunta que ambas evitaron durante años. 
+                             ¿Qué habría pasado si…?`;
+---
+
+<section id="projects" class="full-screen-section bg-blue-300">
+    <div class="w-full max-w-4xl px-8 flex flex-col justify-center">
+        <h1 class="mb-7 self-start">Mis libros</h1>
+        <div class="flex flex-col sm:flex-row gap-16">
+            <div class="card w-full sm:max-w-sm md:max-w-xs lg:max-w-sm mb-7">
+                <figure>
+                    <img src={ambos3img.src} alt="Ambos, tres" />
+                </figure>
+                <div class="card-body">
+                    <h5 class="card-title mb-2.5">Ambos, tres</h5>
+                    <div class="group max-w-md">
+                        <p class="line-clamp-3 group-[.open]:line-clamp-none">
+                            {ambosTresDescription}
+                        </p>
+
+                        <button
+                            onclick="this.parentElement.classList.toggle('open')"
+                            class="text-blue-600 mt-2"
+                        >
+                            <span class="group-[.open]:hidden">Leer más</span>
+                            <span class="hidden group-[.open]:inline"
+                                >Leer menos</span
+                            >
+                        </button>
+                    </div>
+                    <div
+                        class="card-actions flex flex-row gap-2 lg:flex-nowrap mt-5"
+                    >
+                        <button class="btn btn-primary"
+                            ><a
+                                target="blank_"
+                                href="https://www.vinted.es/items/8021403752-libro-ambos-tres-postales-de-los-personajes"
+                            >
+                                Comprar en Vinted
+                            </a></button
+                        >
+                        <button class="btn btn-secondary btn-soft"
+                            ><a
+                                target="blank_"
+                                href="https://www.amazon.es/dp/B0GG5QLBNG/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2WII6WR0QD7J5&dib=eyJ2IjoiMSJ9.85IUTzP7i1P5ERUwCAdk5sPtEVqxPk53WaTwovQWOvUHoa26oUhMJSkJkcqQO5TQONw3jYhXHa12wC8dtxeyIuL_8FIZ8W7G52DNVhST1gw.dgB1EKtvX7Xoy6liz4xjDyC7nR9c8IyZsbrZTfiVU2g&dib_tag=se&keywords=Ambos%2C+tres&qid=1768230635&sprefix=ambos+tr%2Caps%2C281&sr=8-1"
+                            >
+                                Comprar en Kindle
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-full sm:max-w-sm md:max-w-xs lg:max-w-sm mb-7">
+                <figure>
+                    <img src={deNuevoTuimg.src} alt="Y de nuevo, tú" />
+                </figure>
+                <div class="card-body">
+                    <h5 class="card-title mb-2.5">Y de nuevo, tú</h5>
+                    <div class="group max-w-md">
+                        <p class="line-clamp-3 group-[.open]:line-clamp-none">
+                            {deNuevoTuDescription}
+                        </p>
+
+                        <button
+                            onclick="this.parentElement.classList.toggle('open')"
+                            class="text-blue-600 mt-2"
+                        >
+                            <span class="group-[.open]:hidden">Leer más</span>
+                            <span class="hidden group-[.open]:inline"
+                                >Leer menos</span
+                            >
+                        </button>
+                    </div>
+                    <div
+                        class="card-actions flex flex-row gap-2 lg:flex-nowrap mt-5"
+                    >
+                        <button class="btn btn-primary"
+                            ><a
+                                target="blank_"
+                                href="https://www.verkami.com/projects/42765-y-de-nuevo-tu-una-historia-de-segundas-oportunidades-y-lo-que-callamos"
+                            >
+                                Preventa en Verkami
+                            </a></button
+                        >
+                        <!-- <button class="btn btn-secondary btn-soft"
+                            ><a
+                                target="blank_"
+                                href="https://www.amazon.es/dp/B0GG5QLBNG/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2WII6WR0QD7J5&dib=eyJ2IjoiMSJ9.85IUTzP7i1P5ERUwCAdk5sPtEVqxPk53WaTwovQWOvUHoa26oUhMJSkJkcqQO5TQONw3jYhXHa12wC8dtxeyIuL_8FIZ8W7G52DNVhST1gw.dgB1EKtvX7Xoy6liz4xjDyC7nR9c8IyZsbrZTfiVU2g&dib_tag=se&keywords=Ambos%2C+tres&qid=1768230635&sprefix=ambos+tr%2Caps%2C281&sr=8-1"
+                            >
+                                Comprar en Kindle
+                            </a>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style></style>

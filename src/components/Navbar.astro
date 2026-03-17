@@ -1,0 +1,56 @@
+---
+const SECTIONS = [
+    { id: "inicio", label: "Inicio" },
+    { id: "about", label: "Sobre mi" },
+    { id: "projects", label: "Mis libros" },
+    { id: "contact", label: "Contacto" },
+];
+---
+
+<nav
+    id="navbar"
+    class="sticky top-0 bg-white/0 z-50 flex justify-between items-end px-6 pt-4"
+>
+    <div
+        class="text-2xl font-serif font-semibold tracking-tighter cursor-pointer"
+    >
+        <a href="#inicio">MR.</a>
+    </div>
+    <div id="navbar-sections" class="flex flex-row gap-5">
+        {SECTIONS.map((s) => <a class="cursor-pointer" href={`#${s.id}`}>{s.label}</a>)}
+    </div>
+</nav>
+
+<script>
+//    document.addEventListener("click", (e) => {
+//     const target = e.target;
+
+//     if (!(target instanceof Element)) return;
+
+//     const btn = target.closest("button[data-id]");
+//     if (!btn) return;
+
+//     const id = btn.getAttribute("data-id");
+//     if (!id) return;
+//     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
+// });
+
+    // document.addEventListener("DOMContentLoaded", () => {
+    //     let buttons = [];
+    //     let menu = document.getElementById("navbar-sections");
+    //     if (menu) {
+    //         buttons = Array.from(menu.getElementsByTagName("button"));
+    //         buttons.forEach((btn) => {
+    //             btn.addEventListener("click", () => {
+    //                 const id = btn.dataset.id;
+    //                 const section = document.getElementById(id);
+
+    //                 if (section) {
+    //                     section.scrollIntoView({ behavior: "smooth" });
+    //                 }
+    //             });
+    //         });
+    //     }
+    // });
+</script>

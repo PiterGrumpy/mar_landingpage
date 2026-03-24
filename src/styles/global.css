@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @plugin "flyonui";
 
+@font-face {
+  font-family: 'Noto Color Emoji';
+  src: url('https://cdn.jsdelivr.net/fontsource/fonts/noto-color-emoji@latest/emoji-400-normal.woff2');
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -336,4 +341,8 @@ template {
 /** CLASES **/
 .full-screen-section {
   @apply min-h-screen flex flex-col justify-center items-center;
+}
+
+.emoji {
+  font-family: 'Noto Color Emoji';
 }

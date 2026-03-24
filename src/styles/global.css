@@ -346,3 +346,9 @@ template {
 .emoji {
   font-family: 'Noto Color Emoji';
 }
+
+.birthstone-regular {
+  font-family: "Birthstone";
+  font-style: normal;
+  color: rgb(87, 8, 124);
+}

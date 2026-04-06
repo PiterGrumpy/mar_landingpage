@@ -8,35 +8,37 @@ const booksId = "projects";
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main id="inicio">
 		<section class="h-screen flex flex-col">
-			<div class="flex gap-4 items-end">
+			<div class="flex items-end img-shape">
 				<img
 					src={logo.src}
-					class="mb-5"
-					width="200"
+					class="mb-5 ml-5 w-32 md:w-48"
 					alt="Mar M Reynés"
+					style={`shape-outside: url(${logo.src});`} 
 				/>
-				<p	class="pb-5"		
-				>
-					<strong class="birthstone-regular [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)] text-[40px] md:text-[120px]">Mar M. Reynés</strong>
+				<p class="pb-5">
+					<strong
+						class="birthstone-regular [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)] text-[40px] md:text-[120px] -ml-20"
+						>Mar M. Reynés</strong
+					>
 				</p>
 			</div>
 
 			<div class="intro-card">
 				<img
 					src="/img/foto.jpg"
-					class="foto"
-					width="200"
+					class="rounded-xl w-32 md:w-48"
 					alt="Mar M Reynés"
 				/>
-				<h1>
+				<h1 class="text-xl md:text-3xl leading-snug">
 					Hola, soy Mar Muñoz Reynés.
+
 					<br />
 					<code><pre>Bienvenido/a</pre></code> a mi mundo de historias por
 					contar.
 				</h1>
 			</div>
 
-			<div id="links">
+			<div id="links" class="m-3">
 				<a class="button" href={"#" + booksId}>Mis Libros</a>
 				<a
 					href="https://linktr.ee/mm.reynes?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnyhSU1K0ZKb5kz31RfIZzKoEbRQOkxpZXkRBbFZi7HfQjgZchb-z8bAWS6Qw_aem_oQDZvV8GuitZkmFDsduL5g"
@@ -138,7 +140,7 @@ const booksId = "projects";
 		display: flex;
 		align-items: flex-end;
 		gap: 10px;
-		margin: 20px 0px;
+		margin: 50px 0px;
 	}
 	code {
 		display: inline-block;
@@ -151,8 +153,10 @@ const booksId = "projects";
 		padding: 6px 8px;
 	}
 
-	.foto {
-		border-radius: 10px;
+	.img-shape {
+		
+		shape-image-threshold: 0.5;
+		
 	}
 	.box {
 		padding: 16px;

@@ -9,15 +9,15 @@ const SECTIONS = [
 
 <nav
     id="navbar"
-    class="sticky top-0 bg-white/0 z-50 flex justify-between items-end px-6 pt-4"
+    class="sticky top-0 bg-white/0 z-50 flex justify-between items-end px-6 pt-4 backdrop-blur  shadow-sm"
 >
     <div
-        class="text-2xl font-serif font-semibold tracking-tighter cursor-pointer"
+        class="hidden md:block text-2xl font-serif font-semibold tracking-tighter cursor-pointer"
     >
         <a href="#inicio">MR.</a>
     </div>
     <div id="navbar-sections" class="flex flex-row gap-5">
-        {SECTIONS.map((s) => <a class="cursor-pointer" href={`#${s.id}`}>{s.label}</a>)}
+        {SECTIONS.map((s) => <a class="cursor-pointer hover:font-bold transition duration-900 ease-in-ou" href={`#${s.id}`}>{s.label}</a>)}
     </div>
 </nav>
 

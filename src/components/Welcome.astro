@@ -13,7 +13,7 @@ const booksId = "projects";
 					src={logo.src}
 					class="mb-5 ml-5 w-32 md:w-48"
 					alt="Mar M Reynés"
-					style={`shape-outside: url(${logo.src});`} 
+					style={`shape-outside: url(${logo.src});`}
 				/>
 				<p class="pb-5">
 					<strong
@@ -23,18 +23,20 @@ const booksId = "projects";
 				</p>
 			</div>
 
-			<div class="intro-card">
+			<div class="grid grid-cols-[auto_1fr] gap-4 items-center m-5 mt-10 items-start">
 				<img
 					src="/img/foto.jpg"
-					class="rounded-xl w-32 md:w-48"
+					class="rounded-xl w-32 md:w-48 row-span-2"
 					alt="Mar M Reynés"
 				/>
 				<h1 class="text-xl md:text-3xl leading-snug">
-					Hola, soy Mar Muñoz Reynés.
-
-					<br />
+					Hola, soy Mar Muñoz Reynés.<br/>
 					<code><pre>Bienvenido/a</pre></code> a mi mundo de historias por
 					contar.
+				</h1>
+
+				<h1 class="text-xl md:text-3xl leading-snug">
+					
 				</h1>
 			</div>
 
@@ -154,9 +156,7 @@ const booksId = "projects";
 	}
 
 	.img-shape {
-		
 		shape-image-threshold: 0.5;
-		
 	}
 	.box {
 		padding: 16px;

@@ -341,7 +341,7 @@ template {
 
 /** CLASES **/
 .full-screen-section {
-  @apply min-h-screen flex flex-col justify-center items-center;
+   @apply min-h-screen flex flex-col items-center justify-start md:justify-center;
 }
 
 .emoji {

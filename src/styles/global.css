@@ -6,6 +6,7 @@
   src: url('https://cdn.jsdelivr.net/fontsource/fonts/noto-color-emoji@latest/emoji-400-normal.woff2');
 }
 
+
 html{
   scroll-behavior: smooth;
 }
@@ -352,3 +353,9 @@ template {
   font-style: normal;
   color: rgb(87, 8, 124);
 }
+
+.josefin-sans {
+		font-family: "Josefin Sans", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+	}

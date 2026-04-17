@@ -1,5 +1,5 @@
 ---
-import logo from "../../public/img/logo.png";
+import logo from "../../public/img/logo.webp";
 import background from "../assets/background.svg";
 const booksId = "projects";
 ---
@@ -7,11 +7,11 @@ const booksId = "projects";
 <div id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 	<main id="inicio">
-		<section class="h-screen flex flex-col">
+		<section class="full-screen-section">
 			<div class="flex items-end img-shape">
 				<img
 					src={logo.src}
-					class="mb-5 ml-5 w-32 md:w-48"
+					class="mb-8 md:mb-18 ml-5 w-32 md:w-48"
 					alt="Mar M Reynés"
 					style={`shape-outside: url(${logo.src});`}
 				/>
@@ -23,24 +23,30 @@ const booksId = "projects";
 				</p>
 			</div>
 
-			<div class="grid grid-cols-[auto_1fr] gap-4 items-center m-5 mt-10 items-start">
+			<div
+				class="grid grid-cols-[auto_1fr] gap-4 items-center m-5 mt-5 items-start"
+			>
 				<img
 					src="/img/foto.jpg"
 					class="rounded-xl w-32 md:w-48 row-span-2"
 					alt="Mar M Reynés"
 				/>
-				<h1 class="text-xl md:text-3xl leading-snug">
-					Hola, soy Mar Muñoz Reynés.<br/>
-					<code><pre>Bienvenido/a</pre></code> a mi mundo de historias por
-					contar.
-				</h1>
-
-				<h1 class="text-xl md:text-3xl leading-snug">
-					
-				</h1>
+				<div>
+					<p class="text-xl md:text-2xl leading-snug josefin-sans">
+						Hola, soy <strong>Mar Muñoz Reynés</strong>.<br />
+					</p>
+					<div>
+						<h1
+							class="text-xl md:text-2xl leading-snug josefin-sans"
+						>
+							<code><pre>Bienvenido/a</pre></code> a mi mundo de historias
+							por contar.
+						</h1>
+					</div>
+				</div>
 			</div>
 
-			<div id="links" class="m-3">
+			<div id="links" class="flex items-center justify-center md:justify-start md:self-start md:ml-5 md:mb-5 gap-4">
 				<a class="button" href={"#" + booksId}>Mis Libros</a>
 				<a
 					href="https://linktr.ee/mm.reynes?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnyhSU1K0ZKb5kz31RfIZzKoEbRQOkxpZXkRBbFZi7HfQjgZchb-z8bAWS6Qw_aem_oQDZvV8GuitZkmFDsduL5g"
@@ -131,13 +137,7 @@ const booksId = "projects";
 		margin: 0;
 	}
 
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
-	}
+	
 	.intro-card {
 		display: flex;
 		align-items: flex-end;
@@ -177,9 +177,11 @@ const booksId = "projects";
 		#links a.button {
 			padding: 14px 18px;
 		}
+	}
 
-		h1 {
-			line-height: 1.5;
-		}
+	.josefin-sans {
+		font-family: "Josefin Sans", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
 	}
 </style>
